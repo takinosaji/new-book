@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: markdownlint-md
+        name: markdownlint (.md)
+        language: system
+        entry: markdownlint-cli2 --config .markdownlint-md.yml
+        types: [markdown]
+
+      - id: markdownlint-qmd
+        name: markdownlint (.qmd)
+        language: system
+        entry: markdownlint-cli2 --config .markdownlint-qmd.yml
+        files: \.qmd$
+        types_or: [file]

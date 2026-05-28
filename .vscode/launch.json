@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Quarto: Preview Current File",
+      "type": "node",
+      "request": "launch",
+      "noDebug": true,
+      "runtimeExecutable": "quarto",
+      "runtimeArgs": ["preview", "${file}", "--no-browser", "--no-watch-inputs"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Markdownlint: MD (.markdownlint-md.yml)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["markdownlint-cli2", "**/*.md", "--config", ".markdownlint-md.yml"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Markdownlint: QMD (.markdownlint-qmd.yml)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["markdownlint-cli2", "**/*.qmd", "--config", ".markdownlint-qmd.yml"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

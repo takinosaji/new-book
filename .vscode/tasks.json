@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Quarto: Render Book",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "sdlc/ci/build-scripts/render_book.py"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "close": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Quarto: Render Website",
+      "type": "shell",
+      "command": "uv",
+      "args": ["run", "sdlc/ci/build-scripts/render_website.py"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "close": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}

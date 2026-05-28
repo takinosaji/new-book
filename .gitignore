@@ -1,0 +1,68 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude
+.claude/settings.local.json
+.mcp.json
+
+# Node (if using markdown tooling)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build / output
+_site/
+_book/
+_quarto-book.yml
+site_libs/
+public/
+dist/
+out/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+*.whl
+.venv/
+venv/
+env/
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.*
+__output__/
+
+# Temporary / draft files
+*.tmp
+*.bak
+*.draft
+/.quarto/
+**/*.quarto_ipynb

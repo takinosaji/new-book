@@ -1,0 +1,36 @@
+project:
+  type: book
+  output-dir: ../_book
+
+book:
+  title: "New Book"
+  author:
+    - name: Author Name
+      email: author@example.com
+  date: today
+  date-format: "MMMM D, YYYY"
+  chapters:
+    - index.qmd
+  sidebar:
+    style: "docked"
+
+filters:
+  - ../sdlc/ci/render-scripts/fix_image_paths.lua
+  - ../sdlc/ci/render-scripts/fix_docx_title.lua
+  - ../sdlc/ci/render-scripts/fix_docx_cross_refs.lua
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 6
+    number-sections: true
+  docx:
+    reference-doc: reference.docx
+    toc: true
+    toc-depth: 6
+    number-sections: true
+    highlight-style: github
+  typst:
+    toc: true
+    number-sections: true

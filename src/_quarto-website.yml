@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: ../_site
+
+website:
+  title: "New Book"
+  description: "Version 1.0.0"
+  site-url: ""
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Home"
+        href: index.qmd
+  page-footer:
+    left: "© Author Name"
+    right:
+      - icon: github
+        href: ""
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 6
+    number-sections: true
