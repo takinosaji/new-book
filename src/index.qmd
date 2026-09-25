@@ -1,0 +1,35 @@
+# Introduction {.unnumbered}
+
+This book is the single source of truth for **Project Name**.
+It covers everything the team needs to know: background, concepts, guides, and reference material.
+
+## Purpose
+
+Good documentation serves three audiences:
+
+- **New team members** — get up to speed without having to ask around.
+- **Practitioners** — find the answer to a specific question quickly.
+- **Stakeholders** — understand what the project is and why decisions were made.
+
+## Overview
+
+The image below is a placeholder — replace it with a diagram, screenshot, or any visual
+that gives readers an immediate sense of the subject.
+
+![Demo Image](.attachments/demo.png){fig-alt="Overview diagram (placeholder)" width=80%}
+
+| Section | What you will find |
+| --- | --- |
+| **Concepts** | Background knowledge and key terms |
+| **Guides** | Step-by-step instructions for common tasks |
+| **Reference** | Detailed specifications and configuration options |
+
+## How to Use This Book
+
+Navigate using the sidebar. If you are new, read top to bottom.
+If you are looking for something specific, use the search box.
+
+## Contributing
+
+All changes go through a merge request. The CI pipeline lints every `.md` and `.qmd` file
+and renders both the website and the Word document. See `README.md` for local setup.

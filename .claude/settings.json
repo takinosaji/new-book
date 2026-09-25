@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv",
+            "args": [
+              "run", "--project", "${CLAUDE_PROJECT_DIR}",
+              "python", "${CLAUDE_PROJECT_DIR}/.claude/hooks/lint-hook.py"
+            ],
+            "timeout": 30,
+            "statusMessage": "Linting markdown..."
+          }
+        ]
+      }
+    ]
+  }
+}
